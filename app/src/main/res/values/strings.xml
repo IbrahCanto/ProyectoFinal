@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ProyectoFinal</string>
+    <string name="nombre"></string>
+    <string name="descripcion">Descripcion: </string>
+    <string name="descripcion2">Mas información </string>
+    <string name="descripcion3">... </string>
+    <string name="adquirir">Adquirir</string>
+
+
+</resources>
