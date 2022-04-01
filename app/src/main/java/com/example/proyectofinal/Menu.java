@@ -29,4 +29,6 @@ public class Menu extends AppCompatActivity {
         startActivity(gatitoBoton);
     }
 
+    @Override public void onBackPressed() { }
+
 }

@@ -45,5 +45,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(botonpizza);
     }
 
+    @Override public void onBackPressed() { }
+
 
 }

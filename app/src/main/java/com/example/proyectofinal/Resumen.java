@@ -18,4 +18,7 @@ public class Resumen extends AppCompatActivity {
         Intent botonpizza = new Intent(this, Lista1.class);
         startActivity(botonpizza);
     }
+
+    @Override public void onBackPressed() { }
+
 }

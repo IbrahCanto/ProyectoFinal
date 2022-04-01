@@ -107,4 +107,6 @@ public class Lista1 extends AppCompatActivity {
         Intent botonpizza = new Intent(this, Menu.class);
         startActivity(botonpizza);
     }
+
+    @Override public void onBackPressed() { }
 }
