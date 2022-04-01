@@ -25,14 +25,11 @@
             android:layout_height="wrap_content"
             android:text="Cerrar Sesion"
             android:onClick="GatitoBoton"
-
             />
-
 
     </LinearLayout>
 
-
-
+    
     <ImageView
         android:id="@+id/imagePepsi"
         android:layout_width="wrap_content"
