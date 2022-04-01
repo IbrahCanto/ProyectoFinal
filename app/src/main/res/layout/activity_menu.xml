@@ -26,9 +26,7 @@
             android:text="Cerrar Sesion"
             android:onClick="GatitoBoton"
             />
-
     </LinearLayout>
-
     
     <ImageView
         android:id="@+id/imagePepsi"
