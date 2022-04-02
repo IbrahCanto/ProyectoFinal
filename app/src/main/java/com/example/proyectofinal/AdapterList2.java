@@ -15,16 +15,18 @@ public class AdapterList2 extends ArrayAdapter<String> {
     private final Activity context;
     private final String[] nombres;
     private final String[] nombres2;
+    private final String[] modelos;
     private final String[] descripcion;
     private final Integer[] id_images;
     private final String[] precio;
 
 
-    public AdapterList2(Activity context, String[] nombres, String[] nombres2, String[] descripcion, Integer[] id_images, String[] precio) {
+    public AdapterList2(Activity context, String[] nombres, String[] nombres2, String[] modelos, String[] descripcion, Integer[] id_images, String[] precio) {
         super(context, R.layout.item,nombres);
         this.context = context;
         this.nombres = nombres;
         this.nombres2 = nombres2;
+        this.modelos = modelos;
         this.descripcion = descripcion;
         this.id_images = id_images;
         this.precio = precio;
@@ -38,6 +40,7 @@ public class AdapterList2 extends ArrayAdapter<String> {
         View itemView = inflater.inflate(R.layout.item,  null);
 
         TextView _nombre = (TextView) itemView.findViewById(R.id.nombre);
+        TextView _modelos = (TextView) itemView.findViewById(R.id.modelos);
         TextView _descripcion = (TextView) itemView.findViewById(R.id.descripcion);
         ImageView _imagen = (ImageView) itemView.findViewById(R.id.imagen);
         TextView _precio = (TextView) itemView.findViewById(R.id.precio);
@@ -45,6 +48,7 @@ public class AdapterList2 extends ArrayAdapter<String> {
 
 
         _nombre.setText(nombres[position]);
+        _modelos.setText(modelos[position]);
         _descripcion.setText(descripcion[position]);
         _imagen.setImageResource(id_images[position]);
         _precio.setText(precio[position]);

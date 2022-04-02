@@ -24,7 +24,7 @@ public class Menu extends AppCompatActivity {
         startActivity(botonpizza);
     }
 
-    public void GatitoBoton (View view){
+    public void GatitoBoton2 (View view){
         Intent gatitoBoton = new Intent(this, MainActivity.class);
         startActivity(gatitoBoton);
     }

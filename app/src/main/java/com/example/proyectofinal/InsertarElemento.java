@@ -41,6 +41,7 @@ public class InsertarElemento extends AppCompatActivity {
 
         TextView nombre = (TextView)  findViewById(R.id.tbnombre);
         TextView nombre2 = (TextView)  findViewById(R.id.tbnombre2);
+        TextView modelos = (TextView)  findViewById(R.id.tbmodelos);
         TextView descripcion = (TextView)  findViewById(R.id.tbdescripcion);
         ImageView image = (ImageView)  findViewById(R.id.tbimage);
         TextView precio = (TextView)  findViewById(R.id.tbprecio);
@@ -48,6 +49,9 @@ public class InsertarElemento extends AppCompatActivity {
 
         TextView dateView = (TextView)findViewById(R.id.datumprikaz);
         setDate(dateView);
+
+        TextView hourView = (TextView)findViewById(R.id.datumprikaz2);
+        setHour(hourView);
 
         Intent intent = getIntent();
         Bundle b = intent.getExtras();
@@ -57,6 +61,7 @@ public class InsertarElemento extends AppCompatActivity {
             image.setImageResource(b.getInt("IMG"));
             nombre.setText(b.getString("TIT"));
             nombre2.setText(b.getString("TIT2"));
+            modelos.setText(b.getString("MOD"));
             descripcion.setText(b.getString("DET"));
             precio.setText(b.getString("PRE"));
 
@@ -76,7 +81,7 @@ public class InsertarElemento extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                InsertarAlumno(nombre2.getText().toString(), precio.getText().toString(),cal2.getText().toString(),cal3.getText().toString(),prom.getText().toString());
+                InsertarAlumno(nombre2.getText().toString(), modelos.getText().toString(),precio.getText().toString(),dateView.getText().toString(),hourView.getText().toString());
                 //Intent intent = new Intent(InsertarElemento.this,Resumen.class);
                 //startActivity(intent);
 
@@ -89,7 +94,15 @@ public class InsertarElemento extends AppCompatActivity {
     public void setDate (TextView view){
 
         Date today = Calendar.getInstance().getTime();//getting date
-        SimpleDateFormat formatter = new SimpleDateFormat("dd.MM.yyyy");//formating according to my need
+        SimpleDateFormat formatter = new SimpleDateFormat("dd.MMMM.yyyy");//formating according to my need
+        String date = formatter.format(today);
+       view.setText(date);
+    }
+
+    public void setHour (TextView view){
+
+        Date today = Calendar.getInstance().getTime();//getting date
+        SimpleDateFormat formatter = new SimpleDateFormat("h:mm.a");//formating according to my need
         String date = formatter.format(today);
         view.setText(date);
     }

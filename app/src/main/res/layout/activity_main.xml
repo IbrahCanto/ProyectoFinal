@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="@drawable/gatifondo"
     tools:context=".MainActivity">
 
 
@@ -45,7 +45,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/signin"
-        android:text="Sign in"
+        android:text="Tienda en linea"
         android:textColor="@color/white"
         android:textSize="35dp"
         android:textStyle="bold"
@@ -58,7 +58,7 @@
         android:id="@+id/username"
         android:layout_below="@id/signin"
         android:background="#30ffffff"
-        android:hint="Username"
+        android:hint="Nombre de usuario"
         android:textColorHint="@color/white"
         android:textColor="@color/white"
         android:layout_margin="10dp"
@@ -72,7 +72,7 @@
         android:id="@+id/password"
         android:layout_below="@id/username"
         android:background="#30ffffff"
-        android:hint="Password"
+        android:hint="Contraseña"
         android:textColorHint="@color/white"
         android:textColor="@color/white"
         android:layout_margin="10dp"
@@ -86,7 +86,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/loginbtn"
         android:layout_below="@id/password"
-        android:text="LOGIN"
+        android:text="Acceder"
         android:backgroundTint="@color/design_default_color_secondary"
         android:layout_centerHorizontal="true"
         android:layout_margin="20dp"
@@ -97,7 +97,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/forgotpass"
         android:layout_below="@id/loginbtn"
-        android:text="Forgot password?"
+        android:text="Registrarse"
         android:textColor="@color/white"
         android:layout_centerHorizontal="true"
         android:layout_margin="20dp"/>
@@ -107,7 +107,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/others"
         android:layout_above="@id/socialicons"
-        android:text="or sign in with"
+        android:textColor="#ffff"
+        android:text="Siguenos en nuestras redes"
         android:layout_centerHorizontal="true"/>
 
 

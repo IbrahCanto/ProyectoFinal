@@ -8,7 +8,15 @@ package com.example.proyectofinal;
         import android.widget.TextView;
         import android.widget.Toast;
 
+        import com.android.volley.Request;
+        import com.android.volley.RequestQueue;
+        import com.android.volley.Response;
+        import com.android.volley.VolleyError;
+        import com.android.volley.toolbox.JsonObjectRequest;
+        import com.android.volley.toolbox.Volley;
         import com.google.android.material.button.MaterialButton;
+
+        import org.json.JSONObject;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -29,15 +37,16 @@ public class MainActivity extends AppCompatActivity {
         loginbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(username.getText().toString().equals("admin") && password.getText().toString().equals("admin")){
+                if(username.getText().toString().equals("ica") && password.getText().toString().equals("12345")){
                     //correct
                     startActivity(botonpizza);
-                    Toast.makeText(MainActivity.this,"LOGIN SUCCESSFUL",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this,"Bienvenid@",Toast.LENGTH_SHORT).show();
                 }else
                     //incorrect
-                    Toast.makeText(MainActivity.this,"LOGIN FAILED !!!",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this,"Falló el acceso",Toast.LENGTH_SHORT).show();
             }
         });
+
 
     }
     public void PizzaBoton (View view){
