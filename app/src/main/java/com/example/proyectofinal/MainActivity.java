@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         loginbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(username.getText().toString().equals("ica") && password.getText().toString().equals("12345")){
+                if(username.getText().toString().equals("ICA") && password.getText().toString().equals("12345")){
                     //correct
                     startActivity(botonpizza);
                     Toast.makeText(MainActivity.this,"Bienvenid@",Toast.LENGTH_SHORT).show();
@@ -53,6 +53,13 @@ public class MainActivity extends AppCompatActivity {
         Intent botonpizza = new Intent(this, Catalogo.class);
         startActivity(botonpizza);
     }
+
+    public void registerBoton (View view){
+        Intent botonregister = new Intent(this, Registrarse.class);
+        startActivity(botonregister);
+    }
+
+
 
     @Override public void onBackPressed() { }
 

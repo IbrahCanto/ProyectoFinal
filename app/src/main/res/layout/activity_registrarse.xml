@@ -1,9 +1,115 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Registrarse">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/ed_name_ins"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="15dp"
+            android:hint="Nombre"
+            android:textColorHint="#EF1414" />
+
+        <EditText
+            android:id="@+id/ed_cal1_ins"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="15dp"
+            android:hint="Contraseña"
+            android:textColorHint="#EF1414" />
+
+
+        <Button
+            android:id="@+id/registrar"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="15dp"
+            android:text="Registrar" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10000dp"
+        >
+
+        <TextView
+            android:id="@+id/datumprikazi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="50dp"
+            android:text="Gatito relojero"
+            />
+
+        <TextView
+            android:id="@+id/datumprikaz2i"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="50dp"
+            android:text="Gatito relojero"
+            />
+
+        <Button
+            android:id="@+id/nxt"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="15dp"
+            android:text="Ir a la siguiente" />
+        <Button
+            android:id="@+id/verimagen"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="15dp"
+            android:text="Ir a ver imagenes" />
+
+        <EditText
+            android:id="@+id/ed_cal2_ins"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="15dp"
+            android:hint="Teclea tu Cal2"
+            android:textColorHint="#EF1414" />
+
+        <EditText
+            android:id="@+id/ed_cal3_ins"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="15dp"
+            android:hint="Teclea tu Cal3"
+            android:textColorHint="#EF1414" />
+
+        <EditText
+            android:id="@+id/ed_prom_ins"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="15dp"
+            android:hint="Teclea tu Promedio"
+            android:textColorHint="#EF1414" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
