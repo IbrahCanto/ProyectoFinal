@@ -41,9 +41,6 @@ public class Registrarse extends AppCompatActivity {
 
 
 
-
-
-
         TextView dateView = (TextView)findViewById(R.id.datumprikazi);
         setDate(dateView);
 
